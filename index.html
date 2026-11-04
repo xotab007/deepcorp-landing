@@ -30,7 +30,7 @@
 <meta name='twitter:description' content='Выберись из дома, где тебя запер обезумевший дед.'>
 <meta name='twitter:image' content='https://deepcorp.ru/og-image.jpg'>
 <script type='application/ld+json' id='ld'>
-{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://deepcorp.ru/#org","name":"deep corp","url":"https://deepcorp.ru/","description":"Инди-студия, основанная deepins02 и Михаилом Коваленко","founder":[{"@type":"Person","name":"deepins02"},{"@type":"Person","name":"Михаил Коваленко"}]},{"@type":"VideoGame","@id":"https://deepcorp.ru/#deda","name":"ДЕДА","alternateName":"DEDA","url":"https://deepcorp.ru/","image":"https://deepcorp.ru/og-image.jpg","sameAs":["https://store.steampowered.com/app/4216400/DEDA/","https://vkplay.ru/play/game/deda/","https://www.rustore.ru/catalog/app/com.BESSMERTNYKHIVAN.Deda","https://play.google.com/store/apps/details?id=com.deepcorp.deda"],"description":"Камерный хоррор-эскейп: нужно выбраться из дома, где тебя запер обезумевший дед.","genre":["Horror","Escape","Survival"],"gamePlatform":["PC (Windows)","Android"],"applicationCategory":"Game","operatingSystem":"Windows, Android","datePublished":"2026-02-13","inLanguage":["ru","en","zh"],"publisher":{"@id":"https://deepcorp.ru/#org"},"author":{"@id":"https://deepcorp.ru/#org"}},{"@type":"WebSite","name":"deep corp","url":"https://deepcorp.ru/","inLanguage":["ru","en","zh"]}]}
+{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://deepcorp.ru/#org","name":"deep corp","url":"https://deepcorp.ru/","email":"hello@deepcorp.ru","address":{"@type":"PostalAddress","addressCountry":"RU","addressLocality":"Москва","streetAddress":"улица Николы Теслы, дом 1"},"sameAs":["https://www.twitch.tv/deepins02","https://t.me/deepcorpstudio"],"description":"Инди-студия, основанная deepins02 и Михаилом Коваленко","founder":[{"@type":"Person","name":"deepins02","sameAs":"https://www.twitch.tv/deepins02"},{"@type":"Person","name":"Михаил Коваленко"}]},{"@type":"VideoGame","@id":"https://deepcorp.ru/#deda","name":"ДЕДА","alternateName":"DEDA","url":"https://deepcorp.ru/","image":"https://deepcorp.ru/og-image.jpg","sameAs":["https://store.steampowered.com/app/4216400/DEDA/","https://vkplay.ru/play/game/deda/","https://www.rustore.ru/catalog/app/com.BESSMERTNYKHIVAN.Deda","https://play.google.com/store/apps/details?id=com.deepcorp.deda"],"description":"Камерный хоррор-эскейп: нужно выбраться из дома, где тебя запер обезумевший дед.","genre":["Horror","Escape","Survival"],"gamePlatform":["PC (Windows)","Android"],"applicationCategory":"Game","operatingSystem":"Windows, Android","datePublished":"2026-02-13","inLanguage":["ru","en","zh"],"publisher":{"@id":"https://deepcorp.ru/#org"},"author":{"@id":"https://deepcorp.ru/#org"}},{"@type":"WebSite","name":"deep corp","url":"https://deepcorp.ru/","inLanguage":["ru","en","zh"]}]}
 </script>
 <style>
 :root{--bg:#0b0b0d;--fg:#e9e6e1;--mut:#9a958d;--acc:#c0392b;--card:#141416;--line:#26262a}
@@ -50,26 +50,32 @@ nav a:hover{color:var(--fg)}
 .lang button{background:none;border:0;color:var(--mut);padding:6px 10px;font-size:13px;cursor:pointer}
 .lang button[aria-pressed='true']{background:var(--acc);color:#fff}
 .hero{padding:120px 0 96px;text-align:center;background:linear-gradient(180deg,rgba(11,11,13,.45) 0,rgba(11,11,13,.8) 70%,#0b0b0d 100%),url('hero-1600.webp') center/cover no-repeat,url('data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADwAwCdASogAAoAPxF0tFEsJqUisAgBgCIJYgCdACFsdZB+Nr4n0SYAAP7ukS76wfrqj/F5FLsNQaGvkXfGImZy82+xe7VXqQBmT39tED16Y4IbxgIybyPKIofWZkkRWgA=') center/cover no-repeat,radial-gradient(ellipse at 50% 0,#3a1410 0,transparent 65%) #0b0b0d}
-.hero h1{font-size:clamp(56px,14vw,148px);line-height:1;letter-spacing:.08em;font-weight:900;text-shadow:0 0 40px rgba(192,57,43,.6),0 4px 24px rgba(0,0,0,.8)}
+.hero h1{line-height:0;font-size:0}
+.logo-img{display:block;margin:0 auto;width:min(720px,92vw);height:auto}
 .hero .tag{color:#e5584a;text-transform:uppercase;letter-spacing:.25em;font-size:13px;margin-bottom:14px;text-shadow:0 2px 8px rgba(0,0,0,.8)}
 .hero p{max-width:620px;margin:22px auto 32px;color:#cfcac2;font-size:18px;text-shadow:0 2px 12px rgba(0,0,0,.9)}
 .btn{display:inline-block;background:var(--acc);color:#fff;padding:14px 28px;border-radius:8px;font-weight:700;text-decoration:none}
 .btn:hover{filter:brightness(1.15)}
-.btn.alt{background:none;border:1px solid var(--line);color:var(--fg);margin-left:10px}
-.hero .btn.alt{border-color:rgba(233,230,225,.35);background:rgba(11,11,13,.45)}
 .stores{margin-top:32px;display:flex;flex-wrap:wrap;gap:10px;justify-content:center;align-items:center;color:#cfcac2;font-size:14px}
 .stores a{border:1px solid rgba(233,230,225,.3);background:rgba(11,11,13,.55);border-radius:999px;padding:6px 16px;text-decoration:none;color:var(--fg)}
 .stores a:hover{border-color:var(--acc)}
+.stores.social{justify-content:flex-start;margin-top:28px}
 section{padding:64px 0;border-top:1px solid var(--line)}
 h2{font-size:28px;margin-bottom:20px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.founders{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:28px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px}
 .card h3{margin-bottom:8px;font-size:18px}
 .card p,.txt{color:var(--mut)}
+.card p.q{color:var(--fg);margin-top:10px}
+.contacts{margin-top:28px;display:grid;gap:6px}
+.contacts .k{color:var(--mut);margin-right:8px}
+.contacts a{text-decoration:none;border-bottom:1px solid var(--line)}
+.contacts a:hover{border-color:var(--acc)}
 dl{display:grid;grid-template-columns:max-content 1fr;gap:8px 24px;margin-top:20px}
 dt{color:var(--mut)}
 footer{padding:32px 0;border-top:1px solid var(--line);color:var(--mut);font-size:14px;text-align:center}
-@media(max-width:640px){nav a{display:none}.btn.alt{margin:12px 0 0}.hero{padding:88px 0 72px}}
+@media(max-width:640px){nav a{display:none}.hero{padding:88px 0 72px}.founders{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -88,10 +94,9 @@ footer{padding:32px 0;border-top:1px solid var(--line);color:var(--mut);font-siz
 <main id='top'>
 <section class='hero' id='game' style='border:0'><div class='wrap'>
 <div class='tag' data-i='tag'>Хоррор-эскейп · ПК · Android</div>
-<h1>ДЕДА</h1>
+<h1><img id='logo' class='logo-img' src='logo-ru.webp' width='720' height='324' alt='ДЕДА' fetchpriority='high'></h1>
 <p data-i='lead'>Камерный хоррор-эскейп, который ломает привычные жанровые шаблоны. Выберись из дома, где тебя запер обезумевший дед.</p>
 <a class='btn' href='https://store.steampowered.com/app/4216400/DEDA/' target='_blank' rel='noopener' data-i='buy'>Играть в Steam</a>
-<a class='btn alt' href='#features' data-i='more'>Подробнее</a>
 <div class='stores'>
 <span data-i='where'>Где играть:</span>
 <a href='https://store.steampowered.com/app/4216400/DEDA/' target='_blank' rel='noopener'>Steam</a>
@@ -117,29 +122,50 @@ footer{padding:32px 0;border-top:1px solid var(--line);color:var(--mut);font-siz
 <section id='studio'><div class='wrap'>
 <h2 data-i='st_h'>О студии deep corp</h2>
 <p class='txt' data-i='st_p'>Инди-студия, основанная deepins02, стримером с миллионами подписчиков, и Михаилом Коваленко, преподавателем кафедры игровой индустрии РТУ МИРЭА.</p>
-<p style='margin-top:20px'><a class='btn alt' style='margin:0' href='https://deepcorp.ru/' data-i='site'>Сайт студии deepcorp.ru</a></p>
+<div class='founders'>
+<article class='card'><h3 data-i='c1h'>Основатель: deepins02</h3><p data-i='c1p'>Стример с миллионами подписчиков.</p><p class='q' data-i='c1q'>Прямая связь с теми, кто живёт играми и дышит ими.</p></article>
+<article class='card'><h3 data-i='c2h'>Сооснователь: Михаил Коваленко</h3><p data-i='c2p'>Преподаватель кафедры игровой индустрии РТУ МИРЭА.</p><p class='q' data-i='c2q'>Академический взгляд, подкреплённый практикой.</p></article>
+</div>
+<div class='contacts'>
+<div><span class='k' data-i='mail_k'>Связаться:</span><a href='mailto:hello@deepcorp.ru'>hello@deepcorp.ru</a></div>
+<div><span class='k' data-i='addr_k'>Адрес:</span><span data-i='addr'>Россия, Москва, Московский кластер видеоигр и анимации, улица Николы Теслы, дом 1</span></div>
+</div>
+<div class='stores social'>
+<span data-i='follow'>Мы в сети:</span>
+<a href='https://www.twitch.tv/deepins02' target='_blank' rel='noopener'>Twitch</a>
+<a href='https://t.me/deepcorpstudio' target='_blank' rel='noopener'>Telegram</a>
+</div>
 </div></section>
 </main>
 <footer><div class='wrap'>© 2026 deep corp · deepcorp.ru</div></footer>
-<noscript><p style='text-align:center;padding:16px'>ДЕДА — <a href='https://store.steampowered.com/app/4216400/DEDA/'>Steam</a> · <a href='https://vkplay.ru/play/game/deda/'>VK Play</a> · <a href='https://www.rustore.ru/catalog/app/com.BESSMERTNYKHIVAN.Deda'>RuStore</a> · <a href='https://play.google.com/store/apps/details?id=com.deepcorp.deda'>Google Play</a> · <a href='https://deepcorp.ru/?lang=en'>EN</a> · <a href='https://deepcorp.ru/?lang=zh'>中文</a></p></noscript>
+<noscript><p style='text-align:center;padding:16px'>ДЕДА — <a href='https://store.steampowered.com/app/4216400/DEDA/'>Steam</a> · <a href='https://vkplay.ru/play/game/deda/'>VK Play</a> · <a href='https://www.rustore.ru/catalog/app/com.BESSMERTNYKHIVAN.Deda'>RuStore</a> · <a href='https://play.google.com/store/apps/details?id=com.deepcorp.deda'>Google Play</a> · <a href='https://www.twitch.tv/deepins02'>Twitch</a> · <a href='https://t.me/deepcorpstudio'>Telegram</a> · <a href='mailto:hello@deepcorp.ru'>hello@deepcorp.ru</a> · <a href='https://deepcorp.ru/?lang=en'>EN</a> · <a href='https://deepcorp.ru/?lang=zh'>中文</a></p></noscript>
 <script>
 (function(){
 var T={
-ru:{title:'ДЕДА — хоррор-эскейп от инди-студии deep corp',desc:'ДЕДА — камерный хоррор-эскейп от deep corp: выберись из дома, где тебя запер обезумевший дед. Игра для ПК и Android: Steam, VK Play, RuStore, Google Play.',og:'ru_RU',ogd:'Выберись из дома, где тебя запер обезумевший дед.',
-nav_game:'Игра',nav_feat:'Особенности',nav_studio:'Студия',tag:'Хоррор-эскейп · ПК · Android',where:'Где играть:',lead:'Камерный хоррор-эскейп, который ломает привычные жанровые шаблоны. Выберись из дома, где тебя запер обезумевший дед.',buy:'Играть в Steam',more:'Подробнее',feat_h:'О игре',
+ru:{title:'ДЕДА — хоррор-эскейп от инди-студии deep corp',desc:'ДЕДА — камерный хоррор-эскейп от deep corp: выберись из дома, где тебя запер обезумевший дед. Игра для ПК и Android: Steam, VK Play, RuStore, Google Play.',og:'ru_RU',ogd:'Выберись из дома, где тебя запер обезумевший дед.',logoalt:'ДЕДА',
+nav_game:'Игра',nav_feat:'Особенности',nav_studio:'Студия',tag:'Хоррор-эскейп · ПК · Android',where:'Где играть:',lead:'Камерный хоррор-эскейп, который ломает привычные жанровые шаблоны. Выберись из дома, где тебя запер обезумевший дед.',buy:'Играть в Steam',feat_h:'О игре',
 f1h:'Заперт в доме',f1p:'Единственная цель — выбраться. Дом, где каждая комната хранит опасность и загадку.',f2h:'Страх без дешёвых приёмов',f2p:'Главный ужас кроется не в скримерах, а в гнетущей реальности происходящего.',f3h:'Ломает шаблоны',f3p:'Камерная история, которая играет с ожиданиями поклонников жанра.',
 k_genre:'Жанр',v_genre:'Хоррор, эскейп, выживание',k_date:'Релиз',v_date:'13 февраля 2026',k_plat:'Платформа',v_plat:'ПК (Windows), Android',k_dev:'Разработчик',
-st_h:'О студии deep corp',st_p:'Инди-студия, основанная deepins02, стримером с миллионами подписчиков, и Михаилом Коваленко, преподавателем кафедры игровой индустрии РТУ МИРЭА.',site:'Сайт студии deepcorp.ru'},
-en:{title:'DEDA — escape horror game by indie studio deep corp',desc:'DEDA is a small-scale horror escape game by deep corp: break out of a house where a deranged grandfather has locked you in. PC and Android: Steam, VK Play, RuStore, Google Play.',og:'en_US',ogd:'Escape a house where a deranged grandfather has locked you in.',
-nav_game:'Game',nav_feat:'Features',nav_studio:'Studio',tag:'Escape horror · PC · Android',where:'Available on:',lead:'A small-scale horror escape game that breaks the usual genre mold. Escape a house where a deranged grandfather has locked you in.',buy:'Play on Steam',more:'Learn more',feat_h:'About the game',
+st_h:'О студии deep corp',st_p:'Инди-студия, основанная deepins02, стримером с миллионами подписчиков, и Михаилом Коваленко, преподавателем кафедры игровой индустрии РТУ МИРЭА.',
+c1h:'Основатель: deepins02',c1p:'Стример с миллионами подписчиков.',c1q:'Прямая связь с теми, кто живёт играми и дышит ими.',
+c2h:'Сооснователь: Михаил Коваленко',c2p:'Преподаватель кафедры игровой индустрии РТУ МИРЭА.',c2q:'Академический взгляд, подкреплённый практикой.',follow:'Мы в сети:',
+mail_k:'Связаться:',addr_k:'Адрес:',addr:'Россия, Москва, Московский кластер видеоигр и анимации, улица Николы Теслы, дом 1'},
+en:{title:'DEDA — escape horror game by indie studio deep corp',desc:'DEDA is a small-scale horror escape game by deep corp: break out of a house where a deranged grandfather has locked you in. PC and Android: Steam, VK Play, RuStore, Google Play.',og:'en_US',ogd:'Escape a house where a deranged grandfather has locked you in.',logoalt:'DEDA',
+nav_game:'Game',nav_feat:'Features',nav_studio:'Studio',tag:'Escape horror · PC · Android',where:'Available on:',lead:'A small-scale horror escape game that breaks the usual genre mold. Escape a house where a deranged grandfather has locked you in.',buy:'Play on Steam',feat_h:'About the game',
 f1h:'Locked inside',f1p:'Your only goal is to get out. Every room of the house hides danger and a puzzle.',f2h:'Fear without cheap tricks',f2p:'The real fear lies not in jump scares, but in the oppressive reality of what is happening.',f3h:'Breaks the mold',f3p:'An intimate story that plays with the expectations of genre fans.',
 k_genre:'Genre',v_genre:'Horror, escape, survival',k_date:'Release',v_date:'February 13, 2026',k_plat:'Platform',v_plat:'PC (Windows), Android',k_dev:'Developer',
-st_h:'About deep corp',st_p:'An indie studio founded by deepins02, a streamer with millions of followers, and Mikhail Kovalenko, a lecturer at the Game Industry Department of RTU MIREA.',site:'Studio site deepcorp.ru'},
-zh:{title:'DEDA（爷爷）— deep corp 独立工作室出品的恐怖逃生游戏',desc:'DEDA 是 deep corp 推出的小型恐怖逃生游戏：设法逃离被疯狂爷爷锁住的房子。支持 PC 与 Android：Steam、VK Play、RuStore、Google Play。',og:'zh_CN',ogd:'逃出被疯狂爷爷锁住的房子。',
-nav_game:'游戏',nav_feat:'特色',nav_studio:'工作室',tag:'恐怖逃生 · PC · Android',where:'获取平台：',lead:'一款打破传统类型框架的小型恐怖逃生游戏。你必须逃出这座被疯狂爷爷锁住的房子。',buy:'在 Steam 游玩',more:'了解更多',feat_h:'关于游戏',
+st_h:'About deep corp',st_p:'An indie studio founded by deepins02, a streamer with millions of followers, and Mikhail Kovalenko, a lecturer at the Game Industry Department of RTU MIREA.',
+c1h:'Founded by deepins02',c1p:'A streamer with millions of followers.',c1q:'A direct connection to the people who live and breathe games.',
+c2h:'Co-founded by Mikhail Kovalenko',c2p:'A lecturer in the Game Industry Department at RTU MIREA.',c2q:'Academic perspective, grounded in practice.',follow:'Follow us:',
+mail_k:'Contact:',addr_k:'Address:',addr:'Russia, Moscow, Moscow Game Hub, 1 Nikola Tesla Street'},
+zh:{title:'DEDA（爷爷）— deep corp 独立工作室出品的恐怖逃生游戏',desc:'DEDA 是 deep corp 推出的小型恐怖逃生游戏：设法逃离被疯狂爷爷锁住的房子。支持 PC 与 Android：Steam、VK Play、RuStore、Google Play。',og:'zh_CN',ogd:'逃出被疯狂爷爷锁住的房子。',logoalt:'DEDA（爷爷）',
+nav_game:'游戏',nav_feat:'特色',nav_studio:'工作室',tag:'恐怖逃生 · PC · Android',where:'获取平台：',lead:'一款打破传统类型框架的小型恐怖逃生游戏。你必须逃出这座被疯狂爷爷锁住的房子。',buy:'在 Steam 游玩',feat_h:'关于游戏',
 f1h:'被困屋中',f1p:'唯一的目标就是逃出去。房子里的每个房间都暗藏危险与谜题。',f2h:'不靠廉价惊吓的恐惧',f2p:'真正的恐惧并非来自突然惊吓，而是事态本身带来的压抑现实感。',f3h:'打破常规',f3p:'一个紧凑的故事，不断挑战恐怖游戏爱好者的预期。',
 k_genre:'类型',v_genre:'恐怖、逃生、生存',k_date:'发售日期',v_date:'2026年2月13日',k_plat:'平台',v_plat:'PC（Windows）、Android',k_dev:'开发商',
-st_h:'关于 deep corp',st_p:'独立游戏工作室，由拥有数百万粉丝的主播 deepins02 与 RTU MIREA 游戏产业教研室讲师 Mikhail Kovalenko（米哈伊尔·科瓦连科）创立。',site:'工作室网站 deepcorp.ru'}
+st_h:'关于 deep corp',st_p:'独立游戏工作室，由拥有数百万粉丝的主播 deepins02 与 RTU MIREA 游戏产业教研室讲师 Mikhail Kovalenko（米哈伊尔·科瓦连科）创立。',
+c1h:'由 deepins02 创立',c1p:'拥有数百万粉丝的主播。',c1q:'与真正热爱并生活在游戏中的人直接相连。',
+c2h:'由 Mikhail Kovalenko（米哈伊尔·科瓦连科）联合创立',c2p:'RTU MIREA 游戏产业教研室讲师。',c2q:'学术视角，扎根实践。',follow:'关注我们：',
+mail_k:'联系邮箱：',addr_k:'地址：',addr:'俄罗斯，莫斯科，Moscow Game Hub，尼古拉·特斯拉街 1 号'}
 };
 var RU_TZ=/^(Europe\/(Moscow|Kaliningrad|Samara|Volgograd|Kirov|Saratov|Astrakhan|Ulyanovsk|Minsk|Simferopol)|Asia\/(Yekaterinburg|Omsk|Novosibirsk|Barnaul|Tomsk|Novokuznetsk|Krasnoyarsk|Irkutsk|Chita|Yakutsk|Khandyga|Vladivostok|Ust-Nera|Magadan|Sakhalin|Srednekolymsk|Kamchatka|Anadyr|Almaty|Qyzylorda|Aqtobe|Aqtau|Atyrau|Oral|Qostanay|Bishkek))$/;
 var ZH_TZ=/^Asia\/(Shanghai|Chongqing|Harbin|Urumqi|Kashgar|Hong_Kong|Macau|Macao|Taipei)$/;
@@ -167,9 +193,13 @@ meta('meta[property="og:locale"]','content',d.og);
 meta('meta[name="twitter:title"]','content',d.title);
 meta('meta[name="twitter:description"]','content',d.ogd);
 document.querySelectorAll('[data-i]').forEach(function(n){var v=d[n.getAttribute('data-i')];if(v)n.textContent=v});
+var lg=document.getElementById('logo');
+if(lg){var ru=l==='ru';var src=ru?'logo-ru.webp':'logo-en.webp';
+if(lg.getAttribute('src')!==src)lg.setAttribute('src',src);
+lg.setAttribute('width','720');lg.setAttribute('height',ru?'324':'252');lg.setAttribute('alt',d.logoalt)}
 document.querySelectorAll('.lang button').forEach(function(b){b.setAttribute('aria-pressed',String(b.getAttribute('data-l')===l))});
 try{var ld=JSON.parse(document.getElementById('ld').textContent);var g=ld['@graph'];
-g[1].name=l==='ru'?'ДЕДА':(l==='zh'?'DEDA（爷爷）':'DEDA');g[1].description=d.ogd;
+g[2-1].name=l==='ru'?'ДЕДА':(l==='zh'?'DEDA（爷爷）':'DEDA');g[1].description=d.ogd;
 document.getElementById('ld').textContent=JSON.stringify(ld)}catch(e){}
 if(save){try{localStorage.setItem('lang',l)}catch(e){}
 if(history.replaceState){history.replaceState(null,'','?lang='+l+location.hash)}}
