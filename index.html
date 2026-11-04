@@ -12,19 +12,25 @@
 <link rel='alternate' hreflang='zh' href='https://deepcorp.ru/?lang=zh'>
 <link rel='alternate' hreflang='x-default' href='https://deepcorp.ru/'>
 <meta name='theme-color' content='#0b0b0d'>
+<link rel='preload' as='image' href='hero-1600.webp' type='image/webp' fetchpriority='high'>
 <meta property='og:type' content='website'>
 <meta property='og:site_name' content='deep corp'>
 <meta property='og:url' content='https://deepcorp.ru/'>
 <meta property='og:title' content='ДЕДА — хоррор-эскейп от deep corp'>
 <meta property='og:description' content='Выберись из дома, где тебя запер обезумевший дед.'>
+<meta property='og:image' content='https://deepcorp.ru/og-image.jpg'>
+<meta property='og:image:width' content='1200'>
+<meta property='og:image:height' content='630'>
+<meta property='og:image:alt' content='ДЕДА — скриншот из игры: волк и бледная фигура над ночным домом'>
 <meta property='og:locale' content='ru_RU'>
 <meta property='og:locale:alternate' content='en_US'>
 <meta property='og:locale:alternate' content='zh_CN'>
 <meta name='twitter:card' content='summary_large_image'>
 <meta name='twitter:title' content='ДЕДА — хоррор-эскейп от deep corp'>
 <meta name='twitter:description' content='Выберись из дома, где тебя запер обезумевший дед.'>
+<meta name='twitter:image' content='https://deepcorp.ru/og-image.jpg'>
 <script type='application/ld+json' id='ld'>
-{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://deepcorp.ru/#org","name":"deep corp","url":"https://deepcorp.ru/","description":"Инди-студия, основанная deepins02 и Михаилом Коваленко","founder":[{"@type":"Person","name":"deepins02"},{"@type":"Person","name":"Михаил Коваленко"}]},{"@type":"VideoGame","@id":"https://deepcorp.ru/#deda","name":"ДЕДА","alternateName":"DEDA","url":"https://deepcorp.ru/","sameAs":["https://store.steampowered.com/app/4216400/DEDA/","https://vkplay.ru/play/game/deda/","https://www.rustore.ru/catalog/app/com.BESSMERTNYKHIVAN.Deda","https://play.google.com/store/apps/details?id=com.deepcorp.deda"],"description":"Камерный хоррор-эскейп: нужно выбраться из дома, где тебя запер обезумевший дед.","genre":["Horror","Escape","Survival"],"gamePlatform":["PC (Windows)","Android"],"applicationCategory":"Game","operatingSystem":"Windows, Android","datePublished":"2026-02-13","inLanguage":["ru","en","zh"],"publisher":{"@id":"https://deepcorp.ru/#org"},"author":{"@id":"https://deepcorp.ru/#org"}},{"@type":"WebSite","name":"deep corp","url":"https://deepcorp.ru/","inLanguage":["ru","en","zh"]}]}
+{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://deepcorp.ru/#org","name":"deep corp","url":"https://deepcorp.ru/","description":"Инди-студия, основанная deepins02 и Михаилом Коваленко","founder":[{"@type":"Person","name":"deepins02"},{"@type":"Person","name":"Михаил Коваленко"}]},{"@type":"VideoGame","@id":"https://deepcorp.ru/#deda","name":"ДЕДА","alternateName":"DEDA","url":"https://deepcorp.ru/","image":"https://deepcorp.ru/og-image.jpg","sameAs":["https://store.steampowered.com/app/4216400/DEDA/","https://vkplay.ru/play/game/deda/","https://www.rustore.ru/catalog/app/com.BESSMERTNYKHIVAN.Deda","https://play.google.com/store/apps/details?id=com.deepcorp.deda"],"description":"Камерный хоррор-эскейп: нужно выбраться из дома, где тебя запер обезумевший дед.","genre":["Horror","Escape","Survival"],"gamePlatform":["PC (Windows)","Android"],"applicationCategory":"Game","operatingSystem":"Windows, Android","datePublished":"2026-02-13","inLanguage":["ru","en","zh"],"publisher":{"@id":"https://deepcorp.ru/#org"},"author":{"@id":"https://deepcorp.ru/#org"}},{"@type":"WebSite","name":"deep corp","url":"https://deepcorp.ru/","inLanguage":["ru","en","zh"]}]}
 </script>
 <style>
 :root{--bg:#0b0b0d;--fg:#e9e6e1;--mut:#9a958d;--acc:#c0392b;--card:#141416;--line:#26262a}
@@ -43,15 +49,16 @@ nav a:hover{color:var(--fg)}
 .lang{display:flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
 .lang button{background:none;border:0;color:var(--mut);padding:6px 10px;font-size:13px;cursor:pointer}
 .lang button[aria-pressed='true']{background:var(--acc);color:#fff}
-.hero{padding:96px 0 72px;text-align:center;background:radial-gradient(ellipse at 50% 0,#3a1410 0,transparent 65%)}
-.hero h1{font-size:clamp(56px,14vw,148px);line-height:1;letter-spacing:.08em;font-weight:900;text-shadow:0 0 40px rgba(192,57,43,.5)}
-.hero .tag{color:var(--acc);text-transform:uppercase;letter-spacing:.25em;font-size:13px;margin-bottom:14px}
-.hero p{max-width:620px;margin:22px auto 32px;color:var(--mut);font-size:18px}
+.hero{padding:120px 0 96px;text-align:center;background:linear-gradient(180deg,rgba(11,11,13,.45) 0,rgba(11,11,13,.8) 70%,#0b0b0d 100%),url('hero-1600.webp') center/cover no-repeat,url('data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADwAwCdASogAAoAPxF0tFEsJqUisAgBgCIJYgCdACFsdZB+Nr4n0SYAAP7ukS76wfrqj/F5FLsNQaGvkXfGImZy82+xe7VXqQBmT39tED16Y4IbxgIybyPKIofWZkkRWgA=') center/cover no-repeat,radial-gradient(ellipse at 50% 0,#3a1410 0,transparent 65%) #0b0b0d}
+.hero h1{font-size:clamp(56px,14vw,148px);line-height:1;letter-spacing:.08em;font-weight:900;text-shadow:0 0 40px rgba(192,57,43,.6),0 4px 24px rgba(0,0,0,.8)}
+.hero .tag{color:#e5584a;text-transform:uppercase;letter-spacing:.25em;font-size:13px;margin-bottom:14px;text-shadow:0 2px 8px rgba(0,0,0,.8)}
+.hero p{max-width:620px;margin:22px auto 32px;color:#cfcac2;font-size:18px;text-shadow:0 2px 12px rgba(0,0,0,.9)}
 .btn{display:inline-block;background:var(--acc);color:#fff;padding:14px 28px;border-radius:8px;font-weight:700;text-decoration:none}
 .btn:hover{filter:brightness(1.15)}
 .btn.alt{background:none;border:1px solid var(--line);color:var(--fg);margin-left:10px}
-.stores{margin-top:32px;display:flex;flex-wrap:wrap;gap:10px;justify-content:center;align-items:center;color:var(--mut);font-size:14px}
-.stores a{border:1px solid var(--line);border-radius:999px;padding:6px 16px;text-decoration:none;color:var(--fg)}
+.hero .btn.alt{border-color:rgba(233,230,225,.35);background:rgba(11,11,13,.45)}
+.stores{margin-top:32px;display:flex;flex-wrap:wrap;gap:10px;justify-content:center;align-items:center;color:#cfcac2;font-size:14px}
+.stores a{border:1px solid rgba(233,230,225,.3);background:rgba(11,11,13,.55);border-radius:999px;padding:6px 16px;text-decoration:none;color:var(--fg)}
 .stores a:hover{border-color:var(--acc)}
 section{padding:64px 0;border-top:1px solid var(--line)}
 h2{font-size:28px;margin-bottom:20px}
@@ -62,7 +69,7 @@ h2{font-size:28px;margin-bottom:20px}
 dl{display:grid;grid-template-columns:max-content 1fr;gap:8px 24px;margin-top:20px}
 dt{color:var(--mut)}
 footer{padding:32px 0;border-top:1px solid var(--line);color:var(--mut);font-size:14px;text-align:center}
-@media(max-width:640px){nav a{display:none}.btn.alt{margin:12px 0 0}}
+@media(max-width:640px){nav a{display:none}.btn.alt{margin:12px 0 0}.hero{padding:88px 0 72px}}
 </style>
 </head>
 <body>
